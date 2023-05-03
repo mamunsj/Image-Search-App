@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  color: rgb(19, 95, 160);
+  text-align: center;
+  margin: 2rem 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+#search-img {
+  width: 60%;
+  max-width: 400px;
+  padding: 0.8rem 1rem;
+  border: none;
+  box-shadow: 0 0 5px rgb(19, 95, 160);
+}
+
+#search-btn {
+  padding: 0.8rem 1rem;
+  border: none;
+  box-shadow: 0 0 5px rgb(19, 95, 160);
+  color: white;
+  font-weight: bold;
+  background-color: rgb(11, 88, 155);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 3px;
+  transition: background-color 0.3s ease-in;
+}
+
+#search-btn:hover {
+  background-color: rgb(12, 113, 202);
+}
+
+.imagesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.image {
+  margin-bottom: 4rem;
+  margin: 2rem 0;
+  width: 30%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 0 5px rgb(51, 94, 132);
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image a {
+  padding: 0.8rem;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.4s ease;
+  color: black;
+  font-weight: 500;
+}
+
+.image:hover a {
+  background-color: rgb(217, 214, 214);
+}
+
+#show-more-btn {
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(11, 88, 155);
+  text-align: center;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3 ease-in-out;
+  display: none;
+  margin-bottom: 0.4rem;
+}
+
+#show-more-btn:hover {
+  background-color: rgb(56, 117, 171);
+}
+
+@media screen and (max-width: 780px) {
+  .image {
+    width: 45%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image {
+    width: 85%;
+  }
+}
